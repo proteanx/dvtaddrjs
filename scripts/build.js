@@ -11,11 +11,11 @@ shell.config.fatal = true;
 shell.exec('mkdir -p dist');
 
 shell.exec('npx browserify src/cashaddr.js --s cashaddr', { silent:true })
-  .to(`dist/cashaddrjs-${version}.js`);
-shell.echo(`Generated file: dist/cashaddrjs-${version}.js.`);
+  .to(`dist/dvtaddrjs-${version}.js`);
+shell.echo(`Generated file: dist/dvtaddrjs-${version}.js.`);
 
-shell.exec(`cp LICENSE.js dist/cashaddrjs-${version}.min.js`);
-shell.exec(`cat dist/cashaddrjs-${version}.js`, { silent:true })
+shell.exec(`cp LICENSE.js dist/dvtaddrjs-${version}.min.js`);
+shell.exec(`cat dist/dvtaddrjs-${version}.js`, { silent:true })
   .exec('npx uglifyjs -c', { silent:true })
-  .toEnd(`dist/cashaddrjs-${version}.min.js`);
-shell.echo(`Generated file: dist/cashaddrjs-${version}.min.js.`);
+  .toEnd(`dist/dvtaddrjs-${version}.min.js`);
+shell.echo(`Generated file: dist/dvtaddrjs-${version}.min.js.`);
