@@ -1,9 +1,9 @@
 {
-  "name": "cashaddrjs",
-  "description": "Bitcoin Cash cashaddr address format support for Node.js and web browsers.",
+  "name": "dvtaddrjs",
+  "description": "DeVault bech32 address format support for Node.js and web browsers.",
   "main": "src/cashaddr.js",
   "authors": [
-    "Emilio Almansi"
+    "proteus@devault.cc"
   ],
   "license": "MIT",
   "keywords": [
@@ -15,7 +15,7 @@
     "node",
     "browser"
   ],
-  "homepage": "https://github.com/bitcoincashjs/cashaddrjs",
+  "homepage": "https://github.com/proteanx/dvtaddrjs",
   "ignore": [
     "**/.*",
     "node_modules",
